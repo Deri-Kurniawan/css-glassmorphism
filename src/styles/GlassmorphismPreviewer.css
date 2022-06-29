@@ -1,0 +1,23 @@
+.glassmorphismPreviewer {
+  position: fixed;
+  top: 15%;
+  right: 9%;
+  width: 80vw;
+  height: 50vh;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .glassmorphismPreviewer {
+    top: 15%;
+    height: 40vh;
+  }  
+}
+
+@media screen and (max-width: 333px) {
+  .glassmorphismPreviewer {
+    top: 15%;
+    height: 30vh;
+  }  
+}
