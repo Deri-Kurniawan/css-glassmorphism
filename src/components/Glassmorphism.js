@@ -105,19 +105,20 @@ export default function Glassmorphism() {
                     type="color"
                     id="bgColor"
                     value={bgHexColor}
-                    onChange={({ target }) => {
+                    onChange={({ target }) => 
                       setBgHexColor(target.value)
-                      setCodeBlockText(codeBlockRef.current.innerText);
-                    }}
+                    }
+                    tabIndex={1}
                   />
                 </Col>
                 <Col xs={6} sm={6} md={6} lg={12} xl={12}>
-                  <span className="d-block">Actions</span>
+                  <span className="d-block" tabIndex={2}>Actions</span>
                   <Button
                     className="m-1"
                     variant={previewIsHidden ? "outline-primary" : "outline-danger"}
                     title={previewIsHidden ? "Show Preview" : "Hide Preview"}
                     onClick={() => setpreviewIsHidden(!previewIsHidden)}
+                    tabIndex={2}
                   >
                     {previewIsHidden ? (
                       <VisibilityIcon />
@@ -130,6 +131,7 @@ export default function Glassmorphism() {
                     className="m-1 position-relative"
                     title="Reset Changes"
                     onClick={onClickReset}
+                    tabIndex={2}
                   >
                     {popMessageOnTrue(isReset, "Is Reset!")}
                     <RestartAltIcon />
@@ -142,6 +144,7 @@ export default function Glassmorphism() {
                       variant="outline-primary"
                       className="m-1 position-relative"
                       title="Copy to Clipboard"
+                      tabIndex={2}
                     >
                       {popMessageOnTrue(copied, "Copied!")}
                       <ContentCopyIcon />
@@ -167,6 +170,7 @@ export default function Glassmorphism() {
                         onChange={({ target }) => 
                           setBgOpacity(target.value / 100)
                         }
+                        tabIndex={1}
                       />
                       <span>1</span>
                     </div>
@@ -185,7 +189,9 @@ export default function Glassmorphism() {
                         id="blur"
                         value={filterBlur * 5}
                         onChange={({ target }) =>
-                          setFilterBlur(target.value / 5)}
+                          setFilterBlur(target.value / 5)
+                        }
+                        tabIndex={1}
                       />
                       <span>20</span>
                     </div>
@@ -206,6 +212,7 @@ export default function Glassmorphism() {
                         onChange={({ target }) => 
                           setBorderRadius(target.value)
                         }
+                        tabIndex={1}
                       />
                       <span>100</span>
                     </div>
@@ -227,6 +234,7 @@ export default function Glassmorphism() {
                         onChange={({ target }) =>
                           setBorderOpacity(target.value / 100)
                         }
+                        tabIndex={1}
                       />
                       <span>1</span>
                     </div>
