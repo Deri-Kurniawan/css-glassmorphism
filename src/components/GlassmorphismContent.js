@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "../GlassmorphismContent.css";
 import illustrationImg from "../illustration.png";
 import { hexToRGBA } from "../utils/colorConverter";
 import GitHubButton from "react-github-btn";
+import '../styles/GlassmorphismContent.css'
 
 export default function GlassmorphismContent({
   bgHexColor,
@@ -15,9 +15,9 @@ export default function GlassmorphismContent({
 }) {
   return (
     <>
-      <div className="glassmorphismContent my-5">
+      <div className="glassmorphismContent py-5">
         <div className="text-center">
-          <h2>GLASSMORPHISM GENERATOR</h2>
+          <h2 className='glassmorphismContent_title'>GLASSMORPHISM GENERATOR</h2>
           <div className="mt-3">
             <GitHubButton
               href="https://github.com/deri-kurniawan"
