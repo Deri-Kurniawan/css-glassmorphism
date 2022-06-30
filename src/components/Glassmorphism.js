@@ -45,6 +45,7 @@ export default function Glassmorphism() {
 
   const onCopyToClipboard = () => {
     setCopied(true);
+
     const timeout = setTimeout(() => {
       setCopied(false);
       clearTimeout(timeout);
@@ -64,8 +65,10 @@ export default function Glassmorphism() {
   };
 
   useEffect(() => {
-    setCodeBlockText(codeBlockRef.current.innerText);
-  }, []);
+    setInterval(() => {
+      setCodeBlockText(codeBlockRef.current.innerText);
+    }, 500);
+  }, [setCodeBlockText]);
 
   return (
     <div className="glassmorphism">
@@ -102,7 +105,10 @@ export default function Glassmorphism() {
                     type="color"
                     id="bgColor"
                     value={bgHexColor}
-                    onChange={({ target }) => setBgHexColor(target.value)}
+                    onChange={({ target }) => {
+                      setBgHexColor(target.value)
+                      setCodeBlockText(codeBlockRef.current.innerText);
+                    }}
                   />
                 </Col>
                 <Col xs={6} sm={6} md={6} lg={12} xl={12}>
@@ -158,9 +164,10 @@ export default function Glassmorphism() {
                         type="range"
                         id="transparency"
                         value={bgOpacity * 100}
-                        onChange={({ target }) =>
+                        onChange={({ target }) => {
                           setBgOpacity(target.value / 100)
-                        }
+                          setCodeBlockText(codeBlockRef.current.innerText);
+                        }}
                       />
                       <span>1</span>
                     </div>
@@ -178,9 +185,10 @@ export default function Glassmorphism() {
                         className="form-range mx-3"
                         id="blur"
                         value={filterBlur * 5}
-                        onChange={({ target }) =>
+                        onChange={({ target }) => {
                           setFilterBlur(target.value / 5)
-                        }
+                          setCodeBlockText(codeBlockRef.current.innerText); 
+                        }}
                       />
                       <span>20</span>
                     </div>
@@ -198,7 +206,10 @@ export default function Glassmorphism() {
                         className="form-range mx-3"
                         id="borderRadius"
                         value={borderRadius}
-                        onChange={({ target }) => setBorderRadius(target.value)}
+                        onChange={({ target }) => {
+                          setBorderRadius(target.value)
+                          setCodeBlockText(codeBlockRef.current.innerText);
+                        }}
                       />
                       <span>100</span>
                     </div>
@@ -217,9 +228,10 @@ export default function Glassmorphism() {
                         className="form-range mx-3"
                         id="outline"
                         value={borderOpacity * 100}
-                        onChange={({ target }) =>
+                        onChange={({ target }) =>{
                           setBorderOpacity(target.value / 100)
-                        }
+                          setCodeBlockText(codeBlockRef.current.innerText);
+                        }}
                       />
                       <span>1</span>
                     </div>
