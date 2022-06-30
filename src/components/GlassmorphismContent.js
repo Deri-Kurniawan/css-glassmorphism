@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../GlassmorphismContent.css";
 import illustrationImg from "../illustration.png";
 import { hexToRGBA } from "../utils/colorConverter";
+import GitHubButton from "react-github-btn";
 
 export default function GlassmorphismContent({
   bgHexColor,
@@ -17,6 +18,37 @@ export default function GlassmorphismContent({
       <div className="glassmorphismContent my-5">
         <div className="text-center">
           <h2>GLASSMORPHISM GENERATOR</h2>
+          <div className="mt-3">
+            <GitHubButton
+              href="https://github.com/deri-kurniawan"
+              data-color-scheme="no-preference: light; light: dark_high_contrast; dark: dark;"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Follow @deri-kurniawan on GitHub"
+            >
+              Follow
+            </GitHubButton>
+            <GitHubButton
+              href="https://github.com/deri-kurniawan/css-glassmorphism"
+              data-color-scheme="no-preference: light; light: dark_high_contrast; dark: dark;"
+              data-icon="octicon-star"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star deri-kurniawan/css-glassmorphism on GitHub"
+            >
+              Star
+            </GitHubButton>
+            <GitHubButton
+              href="https://github.com/deri-kurniawan/css-glassmorphism/issues"
+              data-color-scheme="no-preference: light; light: dark_high_contrast; dark: dark;"
+              data-icon="octicon-issue-opened"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Issue deri-kurniawan/css-glassmorphism on GitHub"
+            >
+              Issue
+            </GitHubButton>
+          </div>
         </div>
         <Container>
           <Row className="m-0 p-3 mb-3">
