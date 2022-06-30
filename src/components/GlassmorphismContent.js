@@ -25,6 +25,7 @@ export default function GlassmorphismContent({
               data-size="large"
               data-show-count="true"
               aria-label="Follow @deri-kurniawan on GitHub"
+              tabIndex={3}
             >
               Follow
             </GitHubButton>
@@ -35,6 +36,7 @@ export default function GlassmorphismContent({
               data-size="large"
               data-show-count="true"
               aria-label="Star deri-kurniawan/css-glassmorphism on GitHub"
+              tabIndex={3}
             >
               Star
             </GitHubButton>
@@ -45,6 +47,7 @@ export default function GlassmorphismContent({
               data-size="large"
               data-show-count="true"
               aria-label="Issue deri-kurniawan/css-glassmorphism on GitHub"
+              tabIndex={3}
             >
               Issue
             </GitHubButton>
