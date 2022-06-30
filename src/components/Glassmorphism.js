@@ -29,8 +29,6 @@ export default function Glassmorphism() {
     );
     if (confirmReset) {
       setIsReset(true);
-
-      setCopied(false);
       setBgHexColor("#ffffff");
       setBgOpacity(0.1);
       setFilterBlur(2);
@@ -111,7 +109,7 @@ export default function Glassmorphism() {
                   <span className="d-block">Actions</span>
                   <Button
                     className="m-1"
-                    variant={previewIsHidden ? "primary" : "danger"}
+                    variant={previewIsHidden ? "outline-primary" : "outline-danger"}
                     title={previewIsHidden ? "Show Preview" : "Hide Preview"}
                     onClick={() => setpreviewIsHidden(!previewIsHidden)}
                   >
@@ -122,6 +120,7 @@ export default function Glassmorphism() {
                     )}
                   </Button>
                   <Button
+                    variant="outline-primary"
                     className="m-1 position-relative"
                     title="Reset Changes"
                     onClick={onClickReset}
@@ -134,8 +133,8 @@ export default function Glassmorphism() {
                     onCopy={onCopyToClipboard}
                   >
                     <Button
+                      variant="outline-primary"
                       className="m-1 position-relative"
-                      variant="primary"
                       title="Copy to Clipboard"
                     >
                       {popMessageOnTrue(copied, "Copied!")}
