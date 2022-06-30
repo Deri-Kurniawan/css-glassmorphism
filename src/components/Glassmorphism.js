@@ -112,7 +112,7 @@ export default function Glassmorphism() {
                   />
                 </Col>
                 <Col xs={6} sm={6} md={6} lg={12} xl={12}>
-                  <span className="d-block" tabIndex={2}>Actions</span>
+                  <span className="d-block">Actions</span>
                   <Button
                     className="m-1"
                     variant={previewIsHidden ? "outline-primary" : "outline-danger"}
