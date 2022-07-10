@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import illustrationImg from "../illustration.png";
+import illustrationImg from "../illustration.jpg";
 import { hexToRGBA } from "../utils/colorConverter";
 import GitHubButton from "react-github-btn";
-import '../styles/GlassmorphismContent.css'
+import "../styles/GlassmorphismContent.css";
 
 export default function GlassmorphismContent({
   bgHexColor,
@@ -17,7 +17,9 @@ export default function GlassmorphismContent({
     <>
       <div className="glassmorphismContent py-5">
         <div className="text-center">
-          <h2 className='glassmorphismContent_title'>GLASSMORPHISM GENERATOR</h2>
+          <h1 className="glassmorphismContent_title">
+            GLASSMORPHISM GENERATOR
+          </h1>
           <div className="mt-3">
             <GitHubButton
               href="https://github.com/deri-kurniawan"
@@ -56,10 +58,19 @@ export default function GlassmorphismContent({
         <Container>
           <Row className="m-0 p-3 mb-3">
             <Col lg={6}>
-              <img src={illustrationImg} className="col-12" alt="" />
+              <a href="https://www.freepik.com/vectors/glassmorphism" target="_blank" rel="noreferrer" title="Glassmorphism vector created by freepik - www.freepik.com">
+                <img
+                  src={illustrationImg}
+                  className="col-12"
+                  alt=""
+                  style={{
+                    borderRadius: '5px',
+                  }}
+                />
+              </a>
             </Col>
             <Col lg={6}>
-              <h3 className="text-left">CSS CODE</h3>
+              <h2 className="text-left">CSS CODE</h2>
               <code className="card p-2" ref={codeBlockRef}>
                 &#46;my-glass &#123;
                 <br />
@@ -93,16 +104,26 @@ export default function GlassmorphismContent({
           </Row>
           <Row className="m-0 p-3 mb-3">
             <Col xs={12} lg={6}>
-              <h3>What is Google?</h3>
+              <h2>What is Glassmorphism?</h2>
               <p>
-                Google LLC is an American multinational corporation specializing
-                in Internet services and products. These products include search
-                technology, web computing, software, and online advertising.
-                Most of its profits come from AdWords.
+                Glassmorphism is a UI design trend that imitates the look of
+                frosted glass. Elements in the UI look like they are placed on
+                sheets of glass, typically set above a contrasting background.
+                If used intelligently, it can add significant value to your
+                designs, as evidenced by its increasing usage.
               </p>
             </Col>
             <Col xs={12} lg={6}>
-              <img src={illustrationImg} className="col-12" alt="" />
+              <a href="https://www.freepik.com/vectors/glassmorphism" target="_blank" rel="noreferrer" title="Glassmorphism vector created by freepik - www.freepik.com">
+                <img
+                  src={illustrationImg}
+                  className="col-12"
+                  alt=""
+                  style={{
+                    borderRadius: '5px',
+                  }}
+                />
+              </a>
             </Col>
           </Row>
         </Container>
