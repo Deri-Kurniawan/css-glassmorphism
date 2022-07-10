@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import illustrationImg from "../illustration.jpg";
 import { hexToRGBA } from "../utils/colorConverter";
 import GitHubButton from "react-github-btn";
 import "../styles/GlassmorphismContent.css";
@@ -58,16 +57,14 @@ export default function GlassmorphismContent({
         <Container>
           <Row className="m-0 p-3 mb-3">
             <Col lg={6}>
-              <a href="https://www.freepik.com/vectors/glassmorphism" target="_blank" rel="noreferrer" title="Glassmorphism vector created by freepik - www.freepik.com">
-                <img
-                  src={illustrationImg}
-                  className="col-12"
-                  alt=""
-                  style={{
-                    borderRadius: '5px',
-                  }}
-                />
-              </a>
+            <h2>What is Glassmorphism?</h2>
+              <p>
+                Glassmorphism is a UI design trend that imitates the look of
+                frosted glass. Elements in the UI look like they are placed on
+                sheets of glass, typically set above a contrasting background.
+                If used intelligently, it can add significant value to your
+                designs, as evidenced by its increasing usage.
+              </p>
             </Col>
             <Col lg={6}>
               <h2 className="text-left">CSS CODE</h2>
@@ -100,30 +97,6 @@ export default function GlassmorphismContent({
                 <br />
                 &#125;
               </code>
-            </Col>
-          </Row>
-          <Row className="m-0 p-3 mb-3">
-            <Col xs={12} lg={6}>
-              <h2>What is Glassmorphism?</h2>
-              <p>
-                Glassmorphism is a UI design trend that imitates the look of
-                frosted glass. Elements in the UI look like they are placed on
-                sheets of glass, typically set above a contrasting background.
-                If used intelligently, it can add significant value to your
-                designs, as evidenced by its increasing usage.
-              </p>
-            </Col>
-            <Col xs={12} lg={6}>
-              <a href="https://www.freepik.com/vectors/glassmorphism" target="_blank" rel="noreferrer" title="Glassmorphism vector created by freepik - www.freepik.com">
-                <img
-                  src={illustrationImg}
-                  className="col-12"
-                  alt=""
-                  style={{
-                    borderRadius: '5px',
-                  }}
-                />
-              </a>
             </Col>
           </Row>
         </Container>
