@@ -1,6 +1,6 @@
 import React from "react";
 import { hexToRGBA } from "../utils/colorConverter";
-import "../styles/GlassmorphismPreviewer.css";
+import "./GlassmorphismPreviewer.css";
 
 export default function GlassmorphismPreviewer({
   bgHexColor,

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Col, Row, Button, Badge } from "react-bootstrap";
-import "../styles/Glassmorphism.css";
-import GlassmorphismPreviewer from "./GlassmorphismPreviewer";
-import GlassmorphismContent from "./GlassmorphismContent";
+import "./Glassmorphism.css";
+import GlassmorphismPreviewer from "../components/GlassmorphismPreviewer";
+import GlassmorphismContent from "../components/GlassmorphismContent";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
@@ -10,6 +10,8 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 export default function Glassmorphism() {
+  document.title = 'CSS Glassmorphism | Generator'
+
   const [previewIsHidden, setpreviewIsHidden] = useState(false);
   const [bgHexColor, setBgHexColor] = useState("#ffffff");
   const [bgOpacity, setBgOpacity] = useState(0.1);

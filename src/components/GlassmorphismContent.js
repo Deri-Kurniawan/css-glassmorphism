@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { hexToRGBA } from "../utils/colorConverter";
 import GitHubButton from "react-github-btn";
-import "../styles/GlassmorphismContent.css";
+import "./GlassmorphismContent.css";
 
 export default function GlassmorphismContent({
   bgHexColor,
