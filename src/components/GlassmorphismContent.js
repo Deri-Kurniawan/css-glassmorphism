@@ -57,17 +57,7 @@ export default function GlassmorphismContent({
         <Container>
           <Row className="m-0 p-3 mb-3">
             <Col lg={6}>
-            <h2>What is Glassmorphism?</h2>
-              <p>
-                Glassmorphism is a UI design trend that imitates the look of
-                frosted glass. Elements in the UI look like they are placed on
-                sheets of glass, typically set above a contrasting background.
-                If used intelligently, it can add significant value to your
-                designs, as evidenced by its increasing usage.
-              </p>
-            </Col>
-            <Col lg={6}>
-              <h2 className="text-left">CSS CODE</h2>
+              <h2>Glassmorphism CSS Code</h2>
               <code className="card p-2" ref={codeBlockRef}>
                 &#46;my-glass &#123;
                 <br />
@@ -97,6 +87,16 @@ export default function GlassmorphismContent({
                 <br />
                 &#125;
               </code>
+            </Col>
+            <Col lg={6}>
+              <h2>What is Glassmorphism?</h2>
+              <p>
+                Glassmorphism is a UI design trend that imitates the look of
+                frosted glass. Elements in the UI look like they are placed on
+                sheets of glass, typically set above a contrasting background.
+                If used intelligently, it can add significant value to your
+                designs, as evidenced by its increasing usage.
+              </p>
             </Col>
           </Row>
         </Container>
